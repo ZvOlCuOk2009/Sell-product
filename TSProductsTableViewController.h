@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TSProductsTableViewController.h
 //  Sell product
 //
 //  Created by Mac on 25.05.16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TSProductsTableViewController : UITableViewController
 
 @end
-

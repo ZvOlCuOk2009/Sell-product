@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		FDA79B711CF5CD4E002EB69F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79B701CF5CD4E002EB69F /* main.m */; };
 		FDA79B741CF5CD4E002EB69F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79B731CF5CD4E002EB69F /* AppDelegate.m */; };
-		FDA79B771CF5CD4F002EB69F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79B761CF5CD4F002EB69F /* ViewController.m */; };
 		FDA79B7A1CF5CD4F002EB69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA79B781CF5CD4F002EB69F /* Main.storyboard */; };
 		FDA79B7D1CF5CD4F002EB69F /* Sell_product.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDA79B7B1CF5CD4F002EB69F /* Sell_product.xcdatamodeld */; };
 		FDA79B7F1CF5CD4F002EB69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA79B7E1CF5CD4F002EB69F /* Assets.xcassets */; };
 		FDA79B821CF5CD4F002EB69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA79B801CF5CD4F002EB69F /* LaunchScreen.storyboard */; };
 		FDA79B8D1CF5CD50002EB69F /* Sell_productTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79B8C1CF5CD50002EB69F /* Sell_productTests.m */; };
 		FDA79B981CF5CD50002EB69F /* Sell_productUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79B971CF5CD50002EB69F /* Sell_productUITests.m */; };
+		FDA79BA91CF5CE83002EB69F /* TSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BA81CF5CE83002EB69F /* TSDataManager.m */; };
+		FDA79BAD1CF5CF4A002EB69F /* TSProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BAC1CF5CF4A002EB69F /* TSProductsTableViewController.m */; };
+		FDA79BB11CF5D141002EB69F /* TSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BB01CF5D141002EB69F /* TSTableViewCell.m */; };
+		FDA79BB41CF5D464002EB69F /* TSDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BB31CF5D464002EB69F /* TSDetailsTableViewController.m */; };
+		FDA79BB71CF5D47F002EB69F /* TSDescriptionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BB61CF5D47F002EB69F /* TSDescriptionTableViewController.m */; };
+		FDA79BC01CF5DBEB002EB69F /* TSImages+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BB91CF5DBEB002EB69F /* TSImages+CoreDataProperties.m */; };
+		FDA79BC11CF5DBEB002EB69F /* TSImages.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BBB1CF5DBEB002EB69F /* TSImages.m */; };
+		FDA79BC21CF5DBEB002EB69F /* TSProduct+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BBD1CF5DBEB002EB69F /* TSProduct+CoreDataProperties.m */; };
+		FDA79BC31CF5DBEB002EB69F /* TSProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA79BBF1CF5DBEB002EB69F /* TSProduct.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +48,6 @@
 		FDA79B701CF5CD4E002EB69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDA79B721CF5CD4E002EB69F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDA79B731CF5CD4E002EB69F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FDA79B751CF5CD4F002EB69F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FDA79B761CF5CD4F002EB69F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FDA79B791CF5CD4F002EB69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDA79B7C1CF5CD4F002EB69F /* Sell_product.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sell_product.xcdatamodel; sourceTree = "<group>"; };
 		FDA79B7E1CF5CD4F002EB69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +59,24 @@
 		FDA79B931CF5CD50002EB69F /* Sell productUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sell productUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA79B971CF5CD50002EB69F /* Sell_productUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sell_productUITests.m; sourceTree = "<group>"; };
 		FDA79B991CF5CD50002EB69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA79BA71CF5CE83002EB69F /* TSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDataManager.h; sourceTree = "<group>"; };
+		FDA79BA81CF5CE83002EB69F /* TSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDataManager.m; sourceTree = "<group>"; };
+		FDA79BAB1CF5CF4A002EB69F /* TSProductsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProductsTableViewController.h; sourceTree = "<group>"; };
+		FDA79BAC1CF5CF4A002EB69F /* TSProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProductsTableViewController.m; sourceTree = "<group>"; };
+		FDA79BAF1CF5D141002EB69F /* TSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableViewCell.h; sourceTree = "<group>"; };
+		FDA79BB01CF5D141002EB69F /* TSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableViewCell.m; sourceTree = "<group>"; };
+		FDA79BB21CF5D464002EB69F /* TSDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDetailsTableViewController.h; sourceTree = "<group>"; };
+		FDA79BB31CF5D464002EB69F /* TSDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDetailsTableViewController.m; sourceTree = "<group>"; };
+		FDA79BB51CF5D47F002EB69F /* TSDescriptionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDescriptionTableViewController.h; sourceTree = "<group>"; };
+		FDA79BB61CF5D47F002EB69F /* TSDescriptionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDescriptionTableViewController.m; sourceTree = "<group>"; };
+		FDA79BB81CF5DBEB002EB69F /* TSImages+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSImages+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDA79BB91CF5DBEB002EB69F /* TSImages+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSImages+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDA79BBA1CF5DBEB002EB69F /* TSImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSImages.h; sourceTree = "<group>"; };
+		FDA79BBB1CF5DBEB002EB69F /* TSImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSImages.m; sourceTree = "<group>"; };
+		FDA79BBC1CF5DBEB002EB69F /* TSProduct+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSProduct+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDA79BBD1CF5DBEB002EB69F /* TSProduct+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSProduct+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDA79BBE1CF5DBEB002EB69F /* TSProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProduct.h; sourceTree = "<group>"; };
+		FDA79BBF1CF5DBEB002EB69F /* TSProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProduct.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +127,10 @@
 		FDA79B6E1CF5CD4E002EB69F /* Sell product */ = {
 			isa = PBXGroup;
 			children = (
-				FDA79B721CF5CD4E002EB69F /* AppDelegate.h */,
-				FDA79B731CF5CD4E002EB69F /* AppDelegate.m */,
-				FDA79B751CF5CD4F002EB69F /* ViewController.h */,
-				FDA79B761CF5CD4F002EB69F /* ViewController.m */,
+				FDA79BA51CF5CE19002EB69F /* App */,
+				FDA79BA61CF5CE2D002EB69F /* Core Data */,
+				FDA79BAA1CF5CE96002EB69F /* Cell */,
+				FDA79BAE1CF5CF51002EB69F /* Controllers */,
 				FDA79B781CF5CD4F002EB69F /* Main.storyboard */,
 				FDA79B7E1CF5CD4F002EB69F /* Assets.xcassets */,
 				FDA79B801CF5CD4F002EB69F /* LaunchScreen.storyboard */,
@@ -141,6 +165,57 @@
 				FDA79B991CF5CD50002EB69F /* Info.plist */,
 			);
 			path = "Sell productUITests";
+			sourceTree = "<group>";
+		};
+		FDA79BA51CF5CE19002EB69F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FDA79B721CF5CD4E002EB69F /* AppDelegate.h */,
+				FDA79B731CF5CD4E002EB69F /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		FDA79BA61CF5CE2D002EB69F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				FDA79BA71CF5CE83002EB69F /* TSDataManager.h */,
+				FDA79BA81CF5CE83002EB69F /* TSDataManager.m */,
+				FDA79BBC1CF5DBEB002EB69F /* TSProduct+CoreDataProperties.h */,
+				FDA79BBD1CF5DBEB002EB69F /* TSProduct+CoreDataProperties.m */,
+				FDA79BBE1CF5DBEB002EB69F /* TSProduct.h */,
+				FDA79BBF1CF5DBEB002EB69F /* TSProduct.m */,
+				FDA79BB81CF5DBEB002EB69F /* TSImages+CoreDataProperties.h */,
+				FDA79BB91CF5DBEB002EB69F /* TSImages+CoreDataProperties.m */,
+				FDA79BBA1CF5DBEB002EB69F /* TSImages.h */,
+				FDA79BBB1CF5DBEB002EB69F /* TSImages.m */,
+			);
+			name = "Core Data";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FDA79BAA1CF5CE96002EB69F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FDA79BAF1CF5D141002EB69F /* TSTableViewCell.h */,
+				FDA79BB01CF5D141002EB69F /* TSTableViewCell.m */,
+			);
+			name = Cell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FDA79BAE1CF5CF51002EB69F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDA79BAB1CF5CF4A002EB69F /* TSProductsTableViewController.h */,
+				FDA79BAC1CF5CF4A002EB69F /* TSProductsTableViewController.m */,
+				FDA79BB21CF5D464002EB69F /* TSDetailsTableViewController.h */,
+				FDA79BB31CF5D464002EB69F /* TSDetailsTableViewController.m */,
+				FDA79BB51CF5D47F002EB69F /* TSDescriptionTableViewController.h */,
+				FDA79BB61CF5D47F002EB69F /* TSDescriptionTableViewController.m */,
+			);
+			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +280,7 @@
 		FDA79B641CF5CD4D002EB69F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TS;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Tsvigun Alexandr";
 				TargetAttributes = {
@@ -276,8 +352,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA79B771CF5CD4F002EB69F /* ViewController.m in Sources */,
+				FDA79BA91CF5CE83002EB69F /* TSDataManager.m in Sources */,
+				FDA79BC01CF5DBEB002EB69F /* TSImages+CoreDataProperties.m in Sources */,
+				FDA79BC31CF5DBEB002EB69F /* TSProduct.m in Sources */,
+				FDA79BB41CF5D464002EB69F /* TSDetailsTableViewController.m in Sources */,
 				FDA79B7D1CF5CD4F002EB69F /* Sell_product.xcdatamodeld in Sources */,
+				FDA79BC11CF5DBEB002EB69F /* TSImages.m in Sources */,
+				FDA79BB71CF5D47F002EB69F /* TSDescriptionTableViewController.m in Sources */,
+				FDA79BB11CF5D141002EB69F /* TSTableViewCell.m in Sources */,
+				FDA79BC21CF5DBEB002EB69F /* TSProduct+CoreDataProperties.m in Sources */,
+				FDA79BAD1CF5CF4A002EB69F /* TSProductsTableViewController.m in Sources */,
 				FDA79B741CF5CD4E002EB69F /* AppDelegate.m in Sources */,
 				FDA79B711CF5CD4E002EB69F /* main.m in Sources */,
 			);
