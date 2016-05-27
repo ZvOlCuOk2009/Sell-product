@@ -6,14 +6,15 @@
     </entity>
     <entity name="TSObject" syncable="YES"/>
     <entity name="TSProduct" representedClassName="TSProduct" parentEntity="TSObject" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="specification" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TSImages" inverseName="owner" inverseEntity="TSImages" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TSObject" positionX="-72" positionY="-180" width="128" height="45"/>
-        <element name="TSImages" positionX="54" positionY="-1" width="128" height="73"/>
-        <element name="TSProduct" positionX="-191" positionY="-31" width="128" height="103"/>
+        <element name="TSImages" positionX="54" positionY="9" width="128" height="73"/>
+        <element name="TSObject" positionX="-81" positionY="-189" width="128" height="45"/>
+        <element name="TSProduct" positionX="-227" positionY="-36" width="128" height="118"/>
     </elements>
 </model>

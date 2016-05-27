@@ -2,7 +2,7 @@
 //  TSProduct+CoreDataProperties.m
 //  Sell product
 //
-//  Created by Mac on 25.05.16.
+//  Created by Mac on 26.05.16.
 //  Copyright © 2016 Tsvigun Alexandr. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -16,6 +16,7 @@
 @dynamic name;
 @dynamic price;
 @dynamic specification;
+@dynamic image;
 @dynamic images;
 
 @end

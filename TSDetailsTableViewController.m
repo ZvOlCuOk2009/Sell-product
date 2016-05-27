@@ -101,7 +101,6 @@
     }
     self.currentTag = sender.tag;
     //sender.imageView.image = self.imageView.image;
-    
     //[self setButtonImageBackgruond:sender];
 }
 

@@ -34,9 +34,7 @@
                                                                              target:self action:@selector(addProduct:)];
     self.navigationItem.rightBarButtonItem = addItem;
     
-    UIBarButtonItem *addItem2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
-                                                                             target:self action:@selector(addCollView:)];
-    self.navigationItem.leftBarButtonItem = addItem2;
+    //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,7 +71,7 @@
 
 - (void)configureCell:(TSTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     TSProduct *product = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    TSImages *images = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    //TSImages *images = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.nameLabel.text = product.name;
     
@@ -97,11 +95,9 @@
     controller.name = self.product.name;
     controller.price = self.product.price;
     controller.specification = self.product.specification;
-    //controller.image =
     //controller.image = self.product.image;
     [controller receiveCell:self.product];
     [self.navigationController pushViewController:controller animated:YES];
-    //NSLog(@"Image = %@", controller.image);
 }
 
 #pragma mark - Acrions
@@ -118,7 +114,6 @@
 }
 
 
-
 #pragma mark - Fetched results controller
 
 - (NSFetchedResultsController *)fetchedResultsController
@@ -130,7 +125,6 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"TSObject" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
-    //NSSortDescriptor *sortDescriptorData = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
     NSSortDescriptor *sortDescriptorImage = [[NSSortDescriptor alloc] initWithKey:@"image" ascending:NO];
     [fetchRequest setSortDescriptors:@[sortDescriptorImage]];
     
